@@ -18,7 +18,7 @@ fs.readdir(filePath, { withFileTypes: true },  (err, files) => {
             console.error(err);
             return;
           }
-          console.log(`${path.parse(pathFile).name} -${path.parse(pathFile).ext} - ${stats.size}`); 
+          console.log(`${path.parse(pathFile).name} -${path.parse(pathFile).ext} - ${stats.size/1000}kb`); 
         });
       }
     }) 
